@@ -4,7 +4,8 @@
 
 .tasks {
   list-style-type: none;
-  font-size: 22px;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .details {
@@ -23,4 +24,91 @@
 
 .completed p {
   margin-left: 10px;
+}
+
+.new-task i {
+  color: #377BB6;
+  margin-right: 10px;
+}
+
+#link {
+  color: #377BB6;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+#title-link {
+  text-decoration: none;
+  color: black;
+}
+
+#new_task {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.edit_task {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.container {
+  margin: 10px 25px;
+}
+
+label {
+  font-weight: bold;
+}
+
+#task_title {
+  margin-bottom: 8px;
+  height: 20px;
+  border-radius: 4px;
+  border: solid 0.5px grey;
+}
+
+#task_details {
+  margin-bottom: 8px;
+  height: 40px;
+  border-radius: 4px;
+  border: solid 0.5px grey;
+}
+
+input[type="submit" i] {
+  background-color: #377BB6;
+  color: white;
+  font-weight: bold;
+  width: 100px;
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#btn-edit {
+  border: solid 1px grey;
+  padding: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: black;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#trash {
+  font-size: 13px;
+  color: #377BB6;
+  text-decoration: none;
+  margin-left: 5px;
 }

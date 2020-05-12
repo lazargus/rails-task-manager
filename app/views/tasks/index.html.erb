@@ -8,10 +8,23 @@
     <% else %>
       <i class="far fa-square"></i>
     <% end %>
-    <%= link_to task.title, task_path(task)  %>
+    <%= link_to task.title, task_path(task), id: "title-link"  %>
+
+    <%= link_to delete_task_path(task), id: "trash",
+        method: :delete,
+        data: { confirm: "Are you sure?" } do %>
+          <i class="fas fa-trash" ></i>
+    <% end %>
   </li>
 <% end %>
 </ul>
+
+<hr>
+
+<div class="new-task">
+  <i class="fas fa-plus"></i>
+  <%= link_to 'Add a new task', tasks_new_path, id: "link" %>
+</div>
 
 
 
